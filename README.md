@@ -3,7 +3,7 @@ Este repositorio contendrá códigos para complementar el aprendizaje de los alu
 
 ## Contenidos
 
-### 1. [Cpp](./Cpp)
+### I. [Cpp](./Cpp)
 
 1. [Tipos numericos de datos](./Cpp/01-numeric_types.cpp)
 2. [Otros tipos de datos](./Cpp/02-other_types.cpp)
