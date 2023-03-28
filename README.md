@@ -12,13 +12,13 @@ Este repositorio contendrá códigos para complementar el aprendizaje de los alu
 5. [Arreglos](./Cpp/05-arrays.cpp)
 6. [Structs](./Cpp/06-structs.cpp)
 7. [Pointers](./Cpp/07-pointers.cpp)
-8. [Functions](./Cpp/08-functions.cpp)
-9. [Dyanmic Memory](./Cpp/09-dynamic_memory.cpp)
+8. [Funciones](./Cpp/08-functions.cpp)
+9. [Memoria Dinámica](./Cpp/09-dynamic_memory.cpp)
 10. [Strings](./Cpp/10-strings.cpp)
-11. [Text Files](./Cpp/11-text_files.cpp)
-12. [Binary Files](./Cpp/12-binary_files.cpp)
+11. [Archivos de texto](./Cpp/11-text_files.cpp)
+12. [Archivos binarios](./Cpp/12-binary_files.cpp)
 
 ## Contribuciones
 
-Si hay algo que arreglar, no duden en hacer una pull request
-Si hay algo que quieran agregar, no duden en hacer un issue o una pull request!
+* Si hay algo que arreglar, no duden en hacer una pull request
+* Si hay algo que quieran agregar, no duden en hacer un issue o una pull request!
