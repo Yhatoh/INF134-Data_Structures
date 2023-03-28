@@ -35,7 +35,7 @@ int main() {
   cout << "con_coma = " << con_coma << "\n";
   cout << "entero = " << entero << "\n";
   
-  // Si guardo en una variable de tipo entero una variable de tipo entero
+  // Si guardo en una variable de tipo entero una variable de tipo flotante
   // este se trunca
   int truncado = con_coma;
   cout << "truncado = " << truncado << "\n";
