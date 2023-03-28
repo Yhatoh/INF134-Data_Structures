@@ -17,3 +17,8 @@ Este repositorio contendrá códigos para complementar el aprendizaje de los alu
 10. [Strings](./Cpp/10-strings.cpp)
 11. [Text Files](./Cpp/11-text_files.cpp)
 12. [Binary Files](./Cpp/12-binary_files.cpp)
+
+## Contribuciones
+
+Si hay algo que arreglar, no duden en hacer una pull request
+Si hay algo que quieran agregar, no duden en hacer un issue o una pull request!
