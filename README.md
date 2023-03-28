@@ -14,9 +14,11 @@ Este repositorio contendrá códigos para complementar el aprendizaje de los alu
 7. [Pointers](./Cpp/07-pointers.cpp)
 8. [Funciones](./Cpp/08-functions.cpp)
 9. [Memoria Dinámica](./Cpp/09-dynamic_memory.cpp)
-10. [Strings](./Cpp/10-strings.cpp)
-11. [Archivos de texto](./Cpp/11-text_files.cpp)
-12. [Archivos binarios](./Cpp/12-binary_files.cpp)
+10. [Hacer una matriz con memoria dinamica](./Cpp/10-dynamic_memory_matrix.cpp)
+11. [Strings](./Cpp/11-strings.cpp)
+12. [Archivos de texto](./Cpp/12-text_files.cpp)
+13. [Archivos binarios](./Cpp/13-binary_files.cpp)
+14. [Escribir/Leer structs y arreglos](./Cpp/14-binary_files_struct_arrays.cpp)
 
 ## Contribuciones
 
