@@ -20,6 +20,11 @@ Este repositorio contendrá códigos para complementar el aprendizaje de los alu
 13. [Archivos binarios](./Cpp/13-binary_files.cpp)
 14. [Escribir/Leer structs y arreglos](./Cpp/14-binary_files_struct_arrays.cpp)
 
+### II. [TDA](./TDA)
+
+1. [Ejemplo de un TDA Personaje](./TDA/1-example.cpp)
+2. [Ejemplo de la implementación de un racional](./TDA/2-rational.cpp)
+
 ## Contribuciones
 
 * Si hay algo que arreglar, no duden en hacer una pull request
