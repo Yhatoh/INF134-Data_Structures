@@ -25,6 +25,11 @@ Este repositorio contendrá códigos para complementar el aprendizaje de los alu
 1. [Ejemplo de un TDA Personaje](./TDA/1-example.cpp)
 2. [Ejemplo de la implementación de un racional](./TDA/2-rational.cpp)
 
+### III. [Exercise](./Exercise)
+
+1. [Estudiantes aprobados](./Exercise/estudiantes_aprobados/)
+2. [Caracteres distintos](./Exercise/caracteres_distintos/)
+
 ## Contribuciones
 
 * Si hay algo que arreglar, no duden en hacer una pull request
