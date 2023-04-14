@@ -8,7 +8,7 @@ Este repositorio contendrá códigos para complementar el aprendizaje de los alu
 1. [Tipos numericos de datos](./Cpp/01-numeric_types.cpp)
 2. [Otros tipos de datos](./Cpp/02-other_types.cpp)
 3. [Condicionales](./Cpp/03-conditional.cpp)
-4. [Ciclos (while, do-while, for)](./Cpp/04-loops.cpp)
+4. [Ciclos (while, do-while, for)](./Cpp/04-Loops.cpp)
 5. [Arreglos](./Cpp/05-arrays.cpp)
 6. [Structs](./Cpp/06-structs.cpp)
 7. [Pointers](./Cpp/07-pointers.cpp)
