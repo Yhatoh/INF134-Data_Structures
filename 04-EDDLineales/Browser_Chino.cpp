@@ -37,72 +37,72 @@ using namespace std;
  */
 int main() {
   // Leemos la primera opcion por la consola
-	int op;
-	cin >> op;
-	tLista list;
-	while(op != 6) {
-		if(op == 1) {
+  int op;
+  cin >> op;
+  tLista list;
+  while(op != 6) {
+    if(op == 1) {
       // declaramos una variable de tipo char* para almacenar el link que se va a recibir
-			char str[STRING_SIZE];
-			cin >> str;
+      char str[STRING_SIZE];
+      cin >> str;
 
       // este pedazo de codigo nos sirve porque si agregamos algo al final y no estamos en la pos final
       // debemos borrar todo lo que este al frente
-			int i = list.curr_pos();
-			list.move_to_end();
-			list.prev();
-			while(list.curr_pos() > (unsigned int) i) {
-				t_elem_list aux = list.erase();
-			  // eliminamos la memoria puesto que el erase no hace el trabajo por nosotros
+      int i = list.curr_pos();
+      list.move_to_end();
+      list.prev();
+      while(list.curr_pos() > (unsigned int) i) {
+        t_elem_list aux = list.erase();
+        // eliminamos la memoria puesto que el erase no hace el trabajo por nosotros
         // esto es para no tener que modificar la implementacion del erase, puesto que es algo particular
         // del tipo del elemento
         delete[] aux;
-				list.prev();
-			}
+        list.prev();
+      }
       // se pide memoria para almacenar el string dentro de la Lista
-			char* to_append = new char[STRING_SIZE];
-			strcpy(to_append, str);
+      char* to_append = new char[STRING_SIZE];
+      strcpy(to_append, str);
       // realizamos append
-			list.append(to_append);
+      list.append(to_append);
       // despues de hacer append, movemos el curr si es la lista no es de tamanio 1
       // esto porque el curr no se mueve con el append y nosotros siempre queremos ver el ultimo ingresado
-			if(list.length() > 1) {
-				list.next();
-			}
-		} else if(op == 2) {
+      if(list.length() > 1) {
+        list.next();
+      }
+    } else if(op == 2) {
       // gracias a que tenemos prev es directo
-			list.prev();
-		} else if(op == 3) {
+      list.prev();
+    } else if(op == 3) {
       // debemos checkear si es que no estamos en el ultimo elemento, para no movernos al end
-			if(list.curr_pos() < list.length() - 1) {
-				list.next();
-			}
-		} else if(op == 4) {
+      if(list.curr_pos() < list.length() - 1) {
+        list.next();
+      }
+    } else if(op == 4) {
       // recibimos la posicion que nos queremos mover
-			int i;
-			cin >> i;
+      int i;
+      cin >> i;
       // nos movemos al final y hacemos prev para posicionarnos en el ultimo elemento
-			list.move_to_end();
-			list.prev();
+      list.move_to_end();
+      list.prev();
       // eliminamos todo el historia que haya entre el ultimo elemento y la posicion que nos vamos a mover
       // todo esto por la descripcion del problema
-			while(list.curr_pos() >  (unsigned int) i) {
-				t_elem_list aux = list.erase();
-				delete[] aux;
-				list.prev();
-			}
-		} else if(op == 5) {
+      while(list.curr_pos() >  (unsigned int) i) {
+        t_elem_list aux = list.erase();
+        delete[] aux;
+        list.prev();
+      }
+    } else if(op == 5) {
       // se obtiene el link actual en que uno esta
-			cout << list.get_value() << "\n";
-		}
-		cin >> op;
-	}
+      cout << list.get_value() << "\n";
+    }
+    cin >> op;
+  }
 
   // como no modificados el TDA para eliminar la memoria, tenemos que acordarnos de borrar todos los nodos que
   // queden con memoria flotando que requiera ser eliminada antes de llamar al destructor
-	for(list.move_to_start();  (unsigned int) list.curr_pos() < list.length(); list.next()) {
-		t_elem_list aux = list.get_value();
-		delete[] aux;
-	}
-	return 0;
+  for(list.move_to_start();  (unsigned int) list.curr_pos() < list.length(); list.next()) {
+    t_elem_list aux = list.get_value();
+    delete[] aux;
+  }
+  return 0;
 }

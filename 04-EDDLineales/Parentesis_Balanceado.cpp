@@ -21,22 +21,22 @@
  *   Si terminamos de revisar el string y quedan cosas en la pila, significa que faltaron parentesis por revisar. Si esta vacia, ganamos
  */
 bool check(String s) {
-	// Creamos una variable tipo pila
+  // Creamos una variable tipo pila
   tPila pila;
   // recorreremos el string desde la posicion 0 hasta el final
-	for(int i = 0; i < s.length(); i++) {
+  for(int i = 0; i < s.length(); i++) {
     // Si es un abre parentesis realizamos push
-		if(s[i] == '(') pila.push('(');
+    if(s[i] == '(') pila.push('(');
     // Si es un cierra parentesis
-		else {
+    else {
       // Si hay cosas en la pila, sacamos el ultimo abre parentesis
-			if(pila.size() > 0) pila.pop();
+      if(pila.size() > 0) pila.pop();
       // Si no hay nada retornamos falso
-			else return false;
-		}
-	}
+      else return false;
+    }
+  }
   // Si al terminar el for la pila no esta vacia, entonces retornamos falso
-	if(pila.size() > 0) return false;
+  if(pila.size() > 0) return false;
   // Si esta vacia retornamos verdadero
-	else return true;
+  else return true;
 }

@@ -16,46 +16,46 @@ struct Estudiante {
 Estudiante* aprobados(string nombre_archivo, int &t) {
   fstream file;
   // se abre el archivo en modo lectura y en modo binario
-	file.open(nombre_arch, ios::in | ios::binary);
+  file.open(nombre_arch, ios::in | ios::binary);
 
   // se lee el entero `n` descrito
-	int n;
-	file.read((char*)&n, sizeof(int));
+  int n;
+  file.read((char*)&n, sizeof(int));
 
   // se pide memoria para almacenar `n` `Estudiante`
-	Estudiante *arr = new Estudiante[n];
+  Estudiante *arr = new Estudiante[n];
   // se lee los `n` `Estudiantes`
-	file.read((char*)arr, sizeof(Estudiante) * n);
+  file.read((char*)arr, sizeof(Estudiante) * n);
 
   // recordar cerrar el archivo
-	file.close();
+  file.close();
 
   // creo un arreglo del tamanio maximo posible
-	Estudiante *res = new Estudiante[n];
+  Estudiante *res = new Estudiante[n];
 
   // creo una variable count, para guardar los estuidantes de mantera contigua
-	int count = 0;
-	for(int i = 0; i < n; i++) {
-		int num = arr[i].c1 + arr[i].c2 + arr[i].c3;
-		float promedio = num / 3.0;
-		if(promedio >= 54.45) {
-			res[count] = arr[i];
-			count++;
-		}
-	}
+  int count = 0;
+  for(int i = 0; i < n; i++) {
+    int num = arr[i].c1 + arr[i].c2 + arr[i].c3;
+    float promedio = num / 3.0;
+    if(promedio >= 54.45) {
+      res[count] = arr[i];
+      count++;
+    }
+  }
   
   // modificop el valor de t
-	t = count;
+  t = count;
   // creo un arreglo mas chico para almacenar la respuesta real
-	Estudiante *ret = new Estudiante[count];
-	for(int i = 0; i < count; i++) {
-		ret[i] = res[i];
-	}
+  Estudiante *ret = new Estudiante[count];
+  for(int i = 0; i < count; i++) {
+    ret[i] = res[i];
+  }
 
   // se elimina la memoria dinamica pedida y que no es util
-	delete[] arr;
-	delete[] res;
+  delete[] arr;
+  delete[] res;
 
-	return ret;
+  return ret;
 
 }
